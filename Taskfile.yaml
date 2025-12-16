@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  gemini-only:
+    cmds:
+      - litellm --model gemini/gemini-2.5-flash
+    silent: true
+
+  run-by-config:
+    cmds:
+      - litellm --config config.yaml
+    silent: true
