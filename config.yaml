@@ -1,0 +1,8 @@
+model_list:
+  - model_name: gemini-flash
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+
+  - model_name: "*"
+    litellm_params:
+      model: "*"
